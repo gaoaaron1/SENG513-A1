@@ -1,0 +1,11 @@
+.main_container{
+    width: 100%;
+    font-family: "Titillium Web";
+    overflow: hidden;
+}
+
+
+.main_container img{
+    height: auto;
+    width: 100%;
+}

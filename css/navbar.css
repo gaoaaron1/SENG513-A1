@@ -1,0 +1,29 @@
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    font-family:"Titillium Web";
+}
+
+
+
+.nav_bar li a,
+.nav_bar li {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    float: left;
+}
+
+.nav_bar li a:hover {
+    background-color: #111;
+}

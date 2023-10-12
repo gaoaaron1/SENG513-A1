@@ -1,0 +1,190 @@
+
+/*
+    <!‐‐ Course: SENG 513 ‐‐> 
+    <!‐‐ Date: OCT 03, 2023 ‐‐> 
+    <!‐‐ Assignment 1 ‐‐> 
+    <!‐‐ Name: Aaron Gao ‐‐> 
+    <!‐‐ UCID: 30056912 ‐‐>
+*/
+
+
+
+/* Apply margin: 0 to the html element */
+html {
+    margin: 0;
+}
+
+/* shippingDescription Section */
+.shippingDescription {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "header header"
+        "1fr 4fr"
+        "2fr 5fr"
+        "3fr 6fr";
+    background-image: url("../assets/flourish.png");
+    background-color: #2A648A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 10%;
+}
+
+.shippingDescription .header {
+    grid-area: header;
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 4%;
+}
+
+.shippingDescription img {
+    padding-top: 6%;
+    padding-bottom: 1%;
+}
+
+.shippingDescription .item {
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+}
+
+.shippingDescription .item .text {
+    padding-left: 4%;
+}
+
+@media screen and (max-width: 640px) {
+    .shippingDescription {
+        grid-template-areas: "header 1 2 3 4 5 6";
+        background-image: none;
+    }
+
+    .shippingDescription .header {
+        img {
+            padding-top: 12%;
+        }
+        padding-bottom: 8%;
+        font-size: 230%;
+    }
+
+    .shippingDescription .item {
+        font-size: 180%;
+        padding: 0 5% 0 18%;
+    }
+}
+
+
+/* ship_info Section */
+.ship_info {
+
+    display: grid;
+    grid-auto-flow: column;
+    background-image: url("../assets/shipping_icon_large.png");
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-color: #FFFAF7;
+    padding-bottom: 9%;
+    background-position: -7% 81%;
+    grid-template-columns: 54% 44%;
+
+    /* grid-template-areas */
+    grid-template-areas:
+        "header header"
+        "navigate_top navigate_top"
+        "1 2"; 
+}
+
+
+/* ship_info Section */
+.ship_info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "navigate_top navigate_top"
+        "header header"
+        "1 2";
+    background-image: url("../assets/shipping_icon_large.png");
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-color: #FFFAF7;
+    padding-bottom: 10%;
+    background-position: -7% 81%;
+    grid-template-columns: 54% 44%;
+}
+
+.ship_info .title {
+    grid-area: header;
+    font-size: 200%;
+    padding-left: 22%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+
+.ship_info button {
+    border-width: 0px;
+    padding: 0px;
+}
+
+.ship_info #navigate_top {
+    grid-area: navigate_top;
+    justify-self: end;
+}
+
+.ship_info .left {
+    padding-left: 40%;
+    font-size: 140%;
+}
+
+.ship_info .left p {
+    margin-top: 1em;
+}
+
+.ship_info .right {
+    padding-left: 10%;
+    font-size: 140%;
+    padding-right: 10%;
+}
+
+.ship_info .right p {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 640px) {
+    .ship_info {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "navigate_top navigate_top"
+            "header header"
+            "1 2";
+        background-image: url("../assets/shipping_icon_large.png");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: #FFFAF7;
+        padding-bottom: 10%;
+        background-position: -8% 82%;
+        grid-template-columns: 55% 45%;
+    }
+
+    .ship_info #navigate_top {
+        justify-self: center;
+    }
+
+    .ship_info .title {
+        padding-left: 3%;
+    }
+
+    .ship_info .left {
+        padding-left: 3%;
+        width: 80%;
+    }
+
+    .ship_info .right {
+        padding-top: 5%;
+        padding-left: 3%;
+        width: 80%;
+    }
+}

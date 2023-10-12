@@ -2,19 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hi-tech_solutions</title>
-    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <ul class="nav_bar">
-        <li style="font-size: 40px">Hi-TechSOLN</li>
-        <li style="font-style: italic; font-size: 15px">High tech for everyone!</li>
-        <li style="float: right"><a class="active" href="#SHOP">SHOP</a></li>
-    </ul>
+    <meta name="viewport" content="width=device-width">
+    <title>Hi-Tech Solutions</title>
+    <!-- course, date, assignment, your name and your UCID
+    
+    <!‐‐ Course: SENG 513 ‐‐> 
+    <!‐‐ Date: OCT 03, 2023 ‐‐> 
+    <!‐‐ Assignment 1 ‐‐> 
+    <!‐‐ Name: Aaron Gao ‐‐> 
+    <!‐‐ UCID: 30056912 ‐‐>
 
-    <div class="main_container" style="background-image: url('../assets/top_image_large.png')">
-        <!-- Content of the introduction div goes here -->
+    
+    -->
+    <!-- Link to a single CSS folder with multiple stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/links.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="company_logo">Hi-TechSOLN</div>
+        <div class="company_slogan">Hi-Tech solutions for everyone.</div>
+        <div id="shopButton">SHOP</a></div>
     </div>
+
+    <div class="intro_container">
+        <div id="title">Lorem Ipsum dolor sit amet</div>
+        <div id="subtitle">Aenean vulputate eleifend te lus. leo
+            ligula, porttitor eu, co nsequat vitae
+            eleifend ac, enim.
+        </div>
+    </div>
+
+    <div class="description-container">
+        <!-- Content of the description div goes here -->
+		<div class="text">Who we are. <br></div>
+		<div class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		<div class="text">Why should shop with us<br></div>
+		<div class="subtext">Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+			Ut dapibus leo quis risus tempor, hendrerit mo olestie felis dictum.
+			Proin nunc elit, congue vehicula varius ac, sollicitue din ut sem.
+			Etiam ultrices quis ipsum at consequat.</div>
+            
+            <br><br>
+            
+            <!-- Content of the video div goes here -->
+            <div class="video">
+                <embed src="../assets/video_placeholder.png" width="200" height="200">
+            </div>
+
+    </div>
+
+
+    
+    <div class="customize_header">Custom Tech at Your Doorstep</div>
+
+<div class="product">
+  <!-- Repeat this block for each item -->
+  <script>
+    var items = [
+      {
+        id: "img0",
+        title: "Customized - Androids",
+        text: "Proin semper nibh nisl, vel fringilla dolor efficitur a. Donec et leo eleifend, ultricies nunc vel, lobortis eros.",
+        buttonLabel: "BUY DROIDS"
+      },
+      {
+        id: "img1",
+        title: "Customized - VR Experiences",
+        text: "Cras ullamcorper eget lorem elementum hendrerit. Ut velit lectus, pretium vitae sem ac, imperdiet efficitur neque.",
+        buttonLabel: "BUY VR"
+      },
+      {
+        id: "img2",
+        title: "Customized - Laptops",
+        text: "Integer spaien augue, posuere sit amet dolor at, lobortis aliquam purus. Donec eu lacus vel eros pretium pulvinar.",
+        buttonLabel: "BUY LAPTOPS"
+      }
+    ];
+
+    for (var i = 0; i < items.length; i++) {
+      document.write('<div class="col">');
+      document.write('<div id="' + items[i].id + '"></div>');
+      document.write('<div class="title">' + items[i].title + '</div>');
+      document.write('<div class="text">' + items[i].text + '</div>');
+      document.write('<button class="buy_button">' + items[i].buttonLabel + '</button>');
+      document.write('</div>');
+    }
+  </script>
+  <!-- End of repeated block -->
+</div>
+    
+<div class="shippingDescription">
+    <div class="header">
+      <img src="../assets/flourish_logo.png" alt="Flourish Logo">
+      <br>
+      Top 6 Reasons to Shop Here!
+    </div>
+  
+    <!-- Use a loop to generate the items -->
+    <script>
+      var shippingDescription = [
+        "We Investigate the Market",
+        "Our Business Plan has no Problems",
+        "We Finance a LOT",
+        "Good Location",
+        "We're Flexible",
+        "We Don't Expand Too Fast"
+      ];
+  
+      var loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  
+      for (var i = 0; i < shippingDescription.length; i++) {
+        document.write('<div class="item">');
+        document.write((i + 1) + '. ' + shippingDescription[i] + '<br><br>');
+        document.write('<div class="text">' + loremText + '</div>');
+        document.write('</div>');
+      }
+    </script>
+  </div>
+  
+    
+  <div class="about">
+    <div class="left">
+        <div class="title">All About Our Tech</div>
+        <ul class="custom-list">
+            <li>Aenean cursus nulla eget diam molestie, ac sollicitudin orci mattis.</li>
+            <li>Etiam convallis elementum leo, sit amet scelerisque tellus pulvinar eget.</li>
+            <li>Usce convallis venenatis neque, ut egestas purus tempor at.</li>
+            <li>Proin ac feugiat quam.</li>
+            <li>Fusce faucibus tempus ullamcorper.</li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="title">Combining Customization with Personalization</div>
+        <div class="subtitle">CUSTOMIZATION</div>
+        <ul class="custom-list">
+            <li>Aenean cursus nulla eget diam molestie, ac sollicitudin orci mattis.</li>
+            <li>Etiam convallis elementum leo, sit amet scelerisque tellus pulvinar eget.</li>
+            <li>Usce convallis venenatis neque, ut egestas purus tempor at.</li>
+        </ul>
+        <div class="subtitle">PERSONALIZATION</div>
+        <ul class="custom-list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus leo quis risus tempor, hendrerit molestie felis dictum.</li>
+            <li>Proin nunc elit, congue vehicula varius ac, sollicitue din ut sem.</li>
+        </ul>
+    </div>
+</div>
+
+
+    
+    <div class="ship_info">
+        <button id="navigate_top">
+            <img src="../assets/to_top.png" alt="Go to Top">
+        </button>
+    
+        <script>
+            document.getElementById("navigate_top").onclick = function() {
+                document.getElementById("company_logo").scrollIntoView();
+            }
+        </script>
+    
+        <div class="title">
+            We Ship Worldwide!
+        </div>
+    
+        <div class="left">
+            WITHIN CANADA AND THE US
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus leo quis risus tempor, hendrerit molestie felis dictum.</p>
+        </div>
+        
+        <div class="right">
+            INTERNATIONAL SHIPPING
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus leo quis risus tempor, hendrerit molestie felis dictum.</p>
+        </div>
+        
+    </div>
+    
+    <div class="contact-container">
+        <div class="title">
+            Aenean massa cum sociis natoque penatibus et magnis dis parturient?
+        </div>
+        <div class="text">
+            Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+        </div>
+        <button>
+            CONTACT US
+        </button>
+    </div>
+
+    <div class="footer">
+		© Hi-Tech SOLN (Not a real company, copyright symbol for testing purposes only)
+	</div>
+
+    
+
+
+    
 </body>
 </html>

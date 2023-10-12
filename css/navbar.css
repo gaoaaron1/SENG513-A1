@@ -1,29 +1,96 @@
-.nav_bar {
-    list-style-type: none;
+
+/*
+    <!‐‐ Course: SENG 513 ‐‐> 
+    <!‐‐ Date: OCT 03, 2023 ‐‐> 
+    <!‐‐ Assignment 1 ‐‐> 
+    <!‐‐ Name: Aaron Gao ‐‐> 
+    <!‐‐ UCID: 30056912 ‐‐>
+*/
+
+
+
+* {
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* Apply margin: 0 to the html element */
+html {
     margin: 0;
-    padding: 0;
+}
+
+/* Nav Bar */
+.navigation {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(36, 38, 76);
+    margin: 0;
     width: 100%;
-    font-family:"Titillium Web";
-}
-
-
-
-.nav_bar li a,
-.nav_bar li {
     display: flex;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
     flex-direction: row;
-    position: relative;
-    justify-content: center;
-    float: left;
+    align-items: center;
 }
 
-.nav_bar li a:hover {
-    background-color: #111;
+.navigation .company_logo {
+    color: white;
+    font-size: 240%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: lighter;
+    font-style: sans-serif;
+    letter-spacing : -4px;
+    height: 100%;
+}
+
+.navigation .company_slogan {
+    font-style: italic;
+    height: 100%;
+    color: white;
+    font-size: 150%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.navigation #shopButton {
+    height: 85px;
+    font-size: 140%;
+    font-weight: bold;
+    box-sizing: border-box;
+    float: right;
+    position: absolute;
+    right: 10px;
+    color: white;
+    padding: 1.5% 4%;
+    background-color: #2789C0;
+}
+
+/* Add the hover effect */
+.navigation #shopButton:hover {
+    background-color: #1e6b9b; /* Change the background color on hover */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.navigation shopButton:visited {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .navigation {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navigation #company_logo {
+        padding-left: 3%;
+        padding-top: 3%;
+    }
+
+    .navigation #company_slogan {
+        padding-bottom: 3%;
+    }
+
+    .navigation .shopButton {
+        display: none;
+    }
 }

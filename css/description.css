@@ -1,0 +1,135 @@
+
+
+/*
+    <!‐‐ Course: SENG 513 ‐‐> 
+    <!‐‐ Date: OCT 03, 2023 ‐‐> 
+    <!‐‐ Assignment 1 ‐‐> 
+    <!‐‐ Name: Aaron Gao ‐‐> 
+    <!‐‐ UCID: 30056912 ‐‐>
+*/
+
+
+.body {
+    margin: 0;
+}
+
+/* Apply margin: 0 to the html element */
+html {
+    margin: 0;
+}
+
+.description-container{
+
+    font-family: "Titillium Web";
+    font-size: 30px;
+    padding-bottom: 4%;
+    
+}
+
+
+.description-container .text{
+    color: black;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.description-container .subtext{
+    color: black;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-right: 8%;
+
+}
+
+.description-container .video{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+    background-color:  #25274D;
+    padding-bottom: 4%;
+}
+.description-container .video embed {
+    object-fit: contain;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 90%;
+    height: 90%;
+}
+
+.reasons{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas:
+            "header header"
+            "1 4 "
+            "2 5 "
+            "3 6 ";
+    background-image: url("../assets/flourish.png");
+    background-color: #2A648A;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    color: white;
+    padding-bottom: 10%;
+}
+.reasons .header{
+    grid-area: header;
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 4%;
+}
+.reasons img{
+    padding-top: 6%;
+    padding-bottom: 1%;
+}
+.reasons .item{
+    font-size: 140%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+}
+.reasons .item .text{
+    padding-left: 4%;
+}
+
+@media screen and (max-width: 640px) {
+    .reasons {
+        grid-template-areas: 
+            "header" "1" "2" "3" "4" "5" "6";
+        background-image: none;
+    }
+    .reasons .header img {
+        padding-top: 12%;
+    }
+    .reasons .header {
+        padding-bottom: 8%;
+        font-size: 230%;
+    }
+    .reasons .item {
+        font-size: 180%;
+        padding-left: 5%;
+        padding-right: 18%;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .description-container .text{
+        padding-top: 5%;
+        padding-left: 3%;
+    }
+    .description-container .subtext{
+        padding-top: 5%;
+        padding-left: 3%;
+    }
+    .video embed{
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+}
